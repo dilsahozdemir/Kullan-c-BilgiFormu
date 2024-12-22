@@ -1,0 +1,25 @@
+﻿<Window x:Class="KullanıcıBilgiFormu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KullanıcıBilgiFormu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="237">
+    <Grid Margin="0,0,54,0">
+        <StackPanel Background="#FF980FAF" Margin="0,0,-58,0">
+            <TextBlock Text="Ad:" Margin="10"/>
+            <TextBox x:Name="txtAd" Width="200" Background="#FFE30FED"/>
+
+            <TextBlock Text="Soyad:" Margin="10"/>
+            <TextBox Name="txtSoyad" Margin="10" Width="200" Background="#FFE30FED"/>
+
+            <TextBlock Text="Yaş:" Margin="10"/>
+            <TextBox Name="txtYas" Margin="10" Width="200" Background="#FFE30FED"/>
+
+            <Button Content="Ekle" x:Name="btnEkle" Margin="10" Width="200" Click="btnEkle_Click" Background="#FFE30FED"/>
+
+            <ListBox Name="lstKullaniciBilgileri" Margin="10" Width="200" Height="150" Background="#FFCC12C5"/>
+        </StackPanel>
+    </Grid>
+</Window>
